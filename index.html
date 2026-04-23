@@ -3,72 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Voz del Estudiante - E.P.P Rural N°16</title>
+    <title>La Voz del Estudiante | Diario Digital Tres Lagos</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700;900&family=Lora:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script> 
 </head>
 <body>
+    <div class="top-bar">
+        <div class="container">
+            <span>Tres Lagos, Santa Cruz | Ciclo Lectivo 2026</span>
+            <div class="social-links">
+                <a href="https://www.instagram.com/epprural16treslagos/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </div>
+
     <header>
         <div class="container">
-            <p class="school-info">E.P.P Rural N°16 - Tres Lagos [cite: 1, 2, 3]</p>
-            <h1>La Voz del Estudiante</h1>
-            <nav>
-                <ul>
-                    <li><a href="#noticias">Noticias</a></li>
-                    <li><a href="#comunidad">Comunidad</a></li>
-                    <li><a href="#misiones">Misiones</a></li>
-                    <li><a href="#juegos">Juegos Matemáticos</a></li>
-                </ul>
-            </nav>
+            <h1 class="logo">LA VOZ DEL ESTUDIANTE</h1>
+            <p class="subtitle">Órgano de difusión de la Escuela Primaria Provincial Rural N°16</p>
         </div>
+        <nav>
+            <div class="container">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="#">Comunidad</a></li>
+                    <li><a href="#">Deportes</a></li>
+                    <li><a href="#">Cultura</a></li>
+                </ul>
+            </div>
+        </nav>
     </header>
 
-    <main class="container main-grid">
-        <section id="noticias" class="news-feed">
-            <h2>Últimas Publicaciones</h2>
-            <article class="card">
-                <span class="category">Noticia</span>
-                <h3>Bienvenidos al nuevo Ciclo Lectivo 2026</h3>
-                <p>Iniciamos un año lleno de proyectos tecnológicos y aprendizaje situado en nuestro entorno rural[cite: 7, 20].</p>
-                <button class="btn-read" onclick="earnPoints(10)">Leer más (+10 pts)</button>
+    <main class="container portal-grid">
+        <section class="main-content">
+            <article class="featured-news">
+                <div class="news-content">
+                    <span class="tag">DESTACADO</span>
+                    <h2>El Diario Digital se renueva: Tecnología y aprendizaje en el entorno rural</h2>
+                    <p>Bajo la dirección de Edgardo Guillermo Cardenas, la E.P.P N°16 lanza su nueva plataforma interactiva para fortalecer la identidad local.</p>
+                </div>
             </article>
 
-            <article class="card">
-                <span class="category">Historias</span>
-                <h3>Leyendas de Tres Lagos</h3>
-                <p>Los alumnos de la 3ra Unidad Pedagógica rescatan saberes de nuestra comunidad[cite: 23, 26].</p>
-                <button class="btn-read" onclick="earnPoints(10)">Leer más (+10 pts)</button>
-            </article>
+            <div class="secondary-grid">
+                <article class="news-card">
+                    <h3>Proyecto de Informática 2026</h3>
+                    <p>Nuevos desafíos para los alumnos de la 2da y 3ra Unidad Pedagógica.</p>
+                </article>
+                <article class="news-card">
+                    <h3>Radio Comunal</h3>
+                    <p>Presentación oficial de los avances del diario en la radio local.</p>
+                </article>
+            </div>
         </section>
 
-        <aside class="gamification-panel">
-            <div class="user-stats card">
-                <h3>Mi Perfil Periodista</h3>
-                <div class="stat-item">
-                    <span>Nivel:</span>
-                    <span id="user-level">Novato</span>
-                </div>
-                <div class="stat-item">
-                    <span>Puntos:</span>
-                    <span id="user-points">0</span>
-                </div>
-                <div class="progress-bar"><div id="progress" style="width: 0%"></div></div>
+        <aside class="sidebar">
+            <div class="instagram-block">
+                <h3>SÍGUENOS EN INSTAGRAM</h3>
+                <p>Mantente al día con las actividades de la institución.</p>
+                <a href="https://www.instagram.com/epprural16treslagos/" class="insta-btn" target="_blank">
+                    @epprural16treslagos
+                </a>
             </div>
 
-            <div id="misiones" class="missions card">
-                <h3>Misiones del Día</h3>
-                <ul>
-                    <li><input type="checkbox" id="m1" disabled> Leer 2 noticias</li>
-                    <li><input type="checkbox" id="m2" disabled> Resolver la sopa de letras [cite: 45]</li>
-                </ul>
+            <div class="info-block">
+                <h4>Autoridades</h4>
+                <p><strong>Directivo:</strong> Edgardo G. Cardenas</p>
+                <p><strong>Profesor:</strong> Alejandro B. Velazco</p>
             </div>
         </aside>
     </main>
 
     <footer>
-        <p>&copy; 2026 Diario Digital - Proyecto de Informática [cite: 17, 14]</p>
+        <div class="container">
+            <p>&copy; 2026 E.P.P Rural N°16 Tres Lagos - Diario "La Voz del Estudiante"</p>
+        </div>
     </footer>
-
-    <script src="script.js"></script>
 </body>
 </html>
