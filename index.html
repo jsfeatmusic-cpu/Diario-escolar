@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Voz del Estudiante - E.P.P Rural N°16</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <p class="school-info">E.P.P Rural N°16 - Tres Lagos [cite: 1, 2, 3]</p>
+            <h1>La Voz del Estudiante</h1>
+            <nav>
+                <ul>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                    <li><a href="#misiones">Misiones</a></li>
+                    <li><a href="#juegos">Juegos Matemáticos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container main-grid">
+        <section id="noticias" class="news-feed">
+            <h2>Últimas Publicaciones</h2>
+            <article class="card">
+                <span class="category">Noticia</span>
+                <h3>Bienvenidos al nuevo Ciclo Lectivo 2026</h3>
+                <p>Iniciamos un año lleno de proyectos tecnológicos y aprendizaje situado en nuestro entorno rural[cite: 7, 20].</p>
+                <button class="btn-read" onclick="earnPoints(10)">Leer más (+10 pts)</button>
+            </article>
+
+            <article class="card">
+                <span class="category">Historias</span>
+                <h3>Leyendas de Tres Lagos</h3>
+                <p>Los alumnos de la 3ra Unidad Pedagógica rescatan saberes de nuestra comunidad[cite: 23, 26].</p>
+                <button class="btn-read" onclick="earnPoints(10)">Leer más (+10 pts)</button>
+            </article>
+        </section>
+
+        <aside class="gamification-panel">
+            <div class="user-stats card">
+                <h3>Mi Perfil Periodista</h3>
+                <div class="stat-item">
+                    <span>Nivel:</span>
+                    <span id="user-level">Novato</span>
+                </div>
+                <div class="stat-item">
+                    <span>Puntos:</span>
+                    <span id="user-points">0</span>
+                </div>
+                <div class="progress-bar"><div id="progress" style="width: 0%"></div></div>
+            </div>
+
+            <div id="misiones" class="missions card">
+                <h3>Misiones del Día</h3>
+                <ul>
+                    <li><input type="checkbox" id="m1" disabled> Leer 2 noticias</li>
+                    <li><input type="checkbox" id="m2" disabled> Resolver la sopa de letras [cite: 45]</li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Diario Digital - Proyecto de Informática [cite: 17, 14]</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
