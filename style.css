@@ -1,139 +1,179 @@
 :root {
-    --border: #e1e1e1;
-    --dark: #1a1a1a;
-    --accent: #0056b3;
+    --primary-color: #2563EB; 
+    --secondary-color: #1E40AF; 
+    --bg-color: #F3F4F6;
+    --card-bg: #FFFFFF;
+    --text-main: #1F2937;
+    --text-muted: #6B7280;
 }
 
 body {
-    font-family: 'Libre Franklin', sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-main);
     margin: 0;
-    color: var(--dark);
-    background: #fff;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
-.top-bar {
-    background: var(--dark);
-    color: #fff;
-    font-size: 0.8rem;
-    padding: 8px 0;
-}
-
-.top-bar .container {
-    display: flex;
-    justify-content: space-between;
+    padding: 0;
+    line-height: 1.6;
+    padding-bottom: 40px; 
 }
 
 header {
-    padding: 30px 0;
-    text-align: center;
-    border-bottom: 4px solid var(--dark);
-}
-
-.logo {
-    font-family: 'Lora', serif;
-    font-size: 3.5rem;
-    margin: 0;
-    letter-spacing: -1px;
-}
-
-nav {
-    background: #fff;
-    border-bottom: 1px solid var(--border);
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    text-decoration: none;
-    color: var(--dark);
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 0.9rem;
-}
-
-/* Layout Portal */
-.portal-grid {
-    display: grid;
-    grid-template-columns: 8fr 4fr;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.featured-news {
-    border-bottom: 1px solid var(--border);
-    margin-bottom: 25px;
-    padding-bottom: 25px;
-}
-
-.featured-news h2 {
-    font-family: 'Lora', serif;
-    font-size: 2.2rem;
-    margin: 10px 0;
-}
-
-.tag {
-    background: var(--accent);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
     color: white;
-    padding: 3px 8px;
-    font-size: 0.7rem;
-    font-weight: bold;
-}
-
-.secondary-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-}
-
-.news-card {
-    border-top: 1px solid var(--border);
-    padding-top: 15px;
-}
-
-/* Sidebar e Instagram */
-.instagram-block {
-    background: #fafafa;
-    border: 1px solid var(--border);
-    padding: 20px;
     text-align: center;
-    margin-bottom: 30px;
+    padding: 3rem 1rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 
-.insta-btn {
+header h1 { 
+    margin: 0; 
+    font-size: 2.2rem; 
+    letter-spacing: 1px; 
+}
+
+.profesor-badge {
     display: inline-block;
-    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-    color: white;
-    padding: 12px 20px;
-    border-radius: 5px;
-    text-decoration: none;
+    margin-top: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1.1rem;
     font-weight: bold;
-    margin-top: 15px;
+    backdrop-filter: blur(5px);
 }
 
-footer {
-    background: var(--dark);
-    color: white;
-    padding: 40px 0;
-    margin-top: 50px;
+main { 
+    max-width: 1200px; 
+    margin: 3rem auto; 
+    padding: 0 1rem; 
+}
+
+.section-title {
     text-align: center;
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    border-bottom: 2px solid #E5E7EB;
+    padding-bottom: 1rem;
 }
 
-@media (max-width: 768px) {
-    .portal-grid { grid-template-columns: 1fr; }
-    .secondary-grid { grid-template-columns: 1fr; }
-    .logo { font-size: 2rem; }
+.grid-cursos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    padding: 2rem;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-main);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-top-color 0.3s ease;
+    border-top: 4px solid var(--primary-color);
+    display: block;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border-top-color: #F59E0B;
+}
+
+.card-icon { 
+    font-size: 3rem; 
+    margin-bottom: 1rem; 
+}
+
+.card h3 { 
+    margin: 0 0 0.5rem 0; 
+    font-size: 1.3rem; 
+    color: var(--primary-color); 
+}
+
+.card p { 
+    margin: 0; 
+    color: var(--text-muted); 
+    font-size: 0.95rem; 
+}
+
+/* Modal de Instrucciones */
+.modal-overlay {
+    position: fixed; 
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.6); 
+    backdrop-filter: blur(4px);
+    display: flex; justify-content: center; align-items: center;
+    z-index: 2000; 
+    opacity: 0; 
+    visibility: hidden; 
+    transition: 0.3s;
+}
+
+.modal-overlay.active { 
+    opacity: 1; 
+    visibility: visible; 
+}
+
+.modal-content {
+    background: white; 
+    padding: 2.5rem; 
+    border-radius: 15px;
+    max-width: 500px; 
+    width: 90%; 
+    text-align: left;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    border-top: 6px solid var(--primary-color);
+}
+
+.modal-content h2 { 
+    color: var(--primary-color); 
+    margin-top: 0; 
+    text-align: center; 
+    font-size: 1.8rem;
+}
+
+.modal-content ul { 
+    padding-left: 0; 
+    margin-bottom: 25px; 
+    list-style: none; 
+}
+
+.modal-content li { 
+    margin-bottom: 15px; 
+    font-size: 1.05rem; 
+    padding-left: 30px; 
+    position: relative; 
+}
+
+.modal-content li::before { 
+    content: '👉'; 
+    position: absolute; 
+    left: 0; 
+}
+
+.btn-close {
+    background: var(--primary-color); 
+    color: white; border: none;
+    padding: 12px 20px; 
+    border-radius: 25px; 
+    font-weight: bold;
+    cursor: pointer; 
+    width: 100%; 
+    font-size: 1.2rem;
+    transition: background 0.3s;
+}
+
+.btn-close:hover { 
+    background: var(--secondary-color); 
+}
+
+footer { 
+    text-align: center; 
+    padding: 2rem; 
+    color: var(--text-muted); 
+    font-size: 0.9rem; 
 }
