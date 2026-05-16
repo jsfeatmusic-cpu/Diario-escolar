@@ -3,82 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La Voz del Estudiante | Diario Digital Tres Lagos</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700;900&family=Lora:wght@700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script> 
+    <title>Plataforma de Nivelación</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="top-bar">
-        <div class="container">
-            <span>Tres Lagos, Santa Cruz | Ciclo Lectivo 2026</span>
-            <div class="social-links">
-                <a href="https://www.instagram.com/epprural16treslagos/" target="_blank">Instagram</a>
-            </div>
+
+    <div id="welcome-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h2>¡Bienvenidos a la Nivelación! 🚀</h2>
+            <p>Este es tu espacio para ponerte al día y reforzar conocimientos. Recordá:</p>
+            <ul>
+                <li><strong>Explorar:</strong> Ingresá a la tarjeta de la materia que necesites repasar.</li>
+                <li><strong>Completar:</strong> Realizá las actividades propuestas en cada sección.</li>
+                <li><strong>Consultar:</strong> Anotá tus dudas para verlas en clase.</li>
+            </ul>
+            <button onclick="closeModal()" class="btn-close">¡Empezar a aprender!</button>
         </div>
     </div>
 
     <header>
-        <div class="container">
-            <h1 class="logo">LA VOZ DEL ESTUDIANTE</h1>
-            <p class="subtitle">Órgano de difusión de la Escuela Primaria Provincial Rural N°16</p>
-        </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Institucional</a></li>
-                    <li><a href="#">Comunidad</a></li>
-                    <li><a href="#">Deportes</a></li>
-                    <li><a href="#">Cultura</a></li>
-                </ul>
-            </div>
-        </nav>
+        <h1>Plataforma de Nivelación para Estudiantes</h1>
+        <div class="profesor-badge">Profesor: Schroder Gonzalo</div>
     </header>
 
-    <main class="container portal-grid">
-        <section class="main-content">
-            <article class="featured-news">
-                <div class="news-content">
-                    <span class="tag">DESTACADO</span>
-                    <h2>El Diario Digital se renueva: Tecnología y aprendizaje en el entorno rural</h2>
-                    <p>Bajo la dirección de Edgardo Guillermo Cardenas, la E.P.P N°16 lanza su nueva plataforma interactiva para fortalecer la identidad local.</p>
-                </div>
-            </article>
-
-            <div class="secondary-grid">
-                <article class="news-card">
-                    <h3>Proyecto de Informática 2026</h3>
-                    <p>Nuevos desafíos para los alumnos de la 2da y 3ra Unidad Pedagógica.</p>
-                </article>
-                <article class="news-card">
-                    <h3>Radio Comunal</h3>
-                    <p>Presentación oficial de los avances del diario en la radio local.</p>
-                </article>
-            </div>
-        </section>
-
-        <aside class="sidebar">
-            <div class="instagram-block">
-                <h3>SÍGUENOS EN INSTAGRAM</h3>
-                <p>Mantente al día con las actividades de la institución.</p>
-                <a href="https://www.instagram.com/epprural16treslagos/" class="insta-btn" target="_blank">
-                    @epprural16treslagos
-                </a>
-            </div>
-
-            <div class="info-block">
-                <h4>Autoridades</h4>
-                <p><strong>Directivo:</strong> Edgardo G. Cardenas</p>
-                <p><strong>Profesor:</strong>Schroder Gonzalo Joel</p>
-            </div>
-        </aside>
+    <main>
+        <h2 class="section-title">Asignaturas Disponibles</h2>
+        
+        <div class="grid-cursos">
+            <a href="matematica.html" class="card">
+                <div class="card-icon">📐</div>
+                <h3>Matemáticas</h3>
+                <p>Cálculo y Resolución de Problemas</p>
+            </a>
+            
+            <a href="lengua.html" class="card">
+                <div class="card-icon">📖</div>
+                <h3>Lengua</h3>
+                <p>Comprensión y Producción de Textos</p>
+            </a>
+            
+            <a href="historia.html" class="card">
+                <div class="card-icon">🏛️</div>
+                <h3>Historia</h3>
+                <p>Procesos Históricos y Sociales</p>
+            </a>
+            
+            <a href="geografia.html" class="card">
+                <div class="card-icon">🌍</div>
+                <h3>Geografía</h3>
+                <p>Espacios y Sociedades</p>
+            </a>
+            
+            <a href="etica.html" class="card">
+                <div class="card-icon">🤝</div>
+                <h3>Ética</h3>
+                <p>Valores y Reflexión Moral</p>
+            </a>
+            
+            <a href="marketing_turismo.html" class="card">
+                <div class="card-icon">✈️</div>
+                <h3>Marketing y Turismo</h3>
+                <p>Estrategias y Desarrollo Regional</p>
+            </a>
+            
+            <a href="ingles.html" class="card">
+                <div class="card-icon">🇬🇧</div>
+                <h3>Inglés</h3>
+                <p>Idioma Extranjero</p>
+            </a>
+            
+            <a href="portugues.html" class="card">
+                <div class="card-icon">🇧🇷</div>
+                <h3>Portugués</h3>
+                <p>Idioma Extranjero</p>
+            </a>
+            
+            <a href="informatica.html" class="card">
+                <div class="card-icon">💻</div>
+                <h3>Informática</h3>
+                <p>Herramientas Digitales y Lógica</p>
+            </a>
+            
+            <a href="fec.html" class="card">
+                <div class="card-icon">⚖️</div>
+                <h3>F.E.C.</h3>
+                <p>Formación Ética y Ciudadana</p>
+            </a>
+            
+            <a href="proyecto.html" class="card">
+                <div class="card-icon">🏘️</div>
+                <h3>Proyecto Socio Comunitario</h3>
+                <p>Impacto y Desarrollo Social</p>
+            </a>
+            
+            <a href="economia.html" class="card">
+                <div class="card-icon">📊</div>
+                <h3>Economía</h3>
+                <p>Micro y Macroeconomía</p>
+            </a>
+            
+            <a href="fisica.html" class="card">
+                <div class="card-icon">⚛️</div>
+                <h3>Física</h3>
+                <p>Leyes del Universo y Energía</p>
+            </a>
+        </div>
     </main>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2026 E.P.P Rural N°16 Tres Lagos - Diario "La Voz del Estudiante"</p>
-        </div>
+        <p>Material de uso exclusivo para los estudiantes en proceso de nivelación.</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
